@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>موقع تجاري عصري</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 20px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .products, .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .contact-form button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">شعارنا</div>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#about">من نحن</a>
+      <a href="#products">المنتجات</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>مرحباً بكم في متجرنا</h1>
+    <p>منتجاتنا تعكس الجودة والذوق العصري</p>
+  </section>
+
+  <section id="about">
+    <h2>من نحن</h2>
+    <p>نحن علامة تجارية تسعى لتقديم أفضل المنتجات العصرية بجودة عالية وأسعار تنافسية، مع خدمة عملاء تضع راحتكم في المقام الأول.</p>
+  </section>
+
+  <section id="products">
+    <h2>منتجاتنا</h2>
+    <div class="products">
+      <div class="card">
+        <img src="https://via.placeholder.com/200" alt="منتج 1">
+        <h3>منتج 1</h3>
+        <p>سعر: 100 ريال</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200" alt="منتج 2">
+        <h3>منتج 2</h3>
+        <p>سعر: 150 ريال</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200" alt="منتج 3">
+        <h3>منتج 3</h3>
+        <p>سعر: 200 ريال</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>تواصل معنا</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="الاسم الكامل" required />
+      <input type="email" placeholder="البريد الإلكتروني" required />
+      <textarea placeholder="رسالتك" rows="5" required></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 جميع الحقوق محفوظة
+  </footer>
+</body>
+</html>
